@@ -1,67 +1,65 @@
-🌦️ Weather App
+# 🌦️ Weather App
 
-A simple Weather Application built with MVVM architecture and Clean Architecture principles.
-The app consumes weather data from an external Weather API (OpenWeather or similar) and displays it to the user with a clean and modern UI.
+A simple weather application built using MVVM architecture and Clean Architecture principles. The app displays real-time weather data from an external API (such as OpenWeather) with a modern and user-friendly interface.
 
-🚀 Features
+---
 
-Get real-time weather data based on city/location.
+## 🚀 Features
 
-Display temperature, humidity, pressure, wind speed, and cloud information.
+- Fetch real-time weather data by city or location
+- Display temperature, humidity, pressure, wind speed, and cloud status
+- Modern MVVM architecture with clear separation of concerns
+- Dependency injection using Hilt
+- API communication via Retrofit
+- XML-based responsive UI
+- Single Activity + Fragments architecture for easy scalability
+- Smooth navigation between screens using Navigation Component
 
-Modern MVVM architecture with separation of concerns.
+---
 
-Dependency injection with Hilt.
+## 🏗️ Project Structure
 
-API communication using Retrofit.
-
-XML-based UI with responsive design.
-
-Single Activity + Fragments architecture for better scalability.
-
-Navigation Component for smooth and safe navigation between screens.
-
-🏗️ Project Structure
+```
 📂 app/
- ┣ 📂 data/          →  local data sources (Retrofit),Repository Interfaces.
- ┣ 📂 domain/        → Contains Entities + Repository Impl.
- ┣ 📂 ui/            → Presentation layer (Single Activity, Fragments, ViewModels).
- ┣ 📂 di/            → Dependency Injection modules (Hilt).
- ┣ 📂 utils/         → Helper classes, constants, and extensions.
+ ┣ 📂 data/       → Local data sources (Retrofit), Repository interfaces
+ ┣ 📂 domain/     → Entities + Repository implementations
+ ┣ 📂 ui/         → Presentation layer (Single Activity, Fragments, ViewModels)
+ ┣ 📂 di/         → Dependency Injection modules (Hilt)
+ ┣ 📂 utils/      → Helper utilities, constants, and extensions
+```
 
-🔧 Tech Stack
+---
 
-Kotlin / Java
+## 🔧 Tech Stack
 
-MVVM + Clean Architecture
+- **Kotlin**
+- **MVVM + Clean Architecture**
+- **Hilt** (Dependency Injection)
+- **Retrofit** (Networking)
+- **Coroutines**
+- **XML Layouts** (UI design)
+- **Single Activity + Fragments**
+- **Navigation Component** (Screen navigation)
 
-Hilt (Dependency Injection)
+---
 
-Retrofit (Networking)
+## ⚙️ Setup
 
-Coroutines / RxJava (for async operations)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   ```
 
-XML Layouts (UI design)
+2. **Add your API key**  
+   In the constants file or inside your Retrofit setup.
 
-Single Activity + Fragments
+3. **Build and run the app**  
+   Using Android Studio or your preferred build tool.
 
-Navigation Component
+---
 
-⚙️ Setup
+## 📌 Future Improvements
 
-Clone the repository:
-
-git clone https://github.com/your-username/weather-app.git
-
-
-Add your API Key in constants or inside your Retrofit instance.
-
-Build and run the app.
-
-📌 Future Improvements
-
-Add UseCases layer for better Clean Architecture implementation.
-
-Implement offline caching with Room Database.
-
-Add more UI enhancements (animations, dark mode, etc).
+- Add a UseCases layer for improved Clean Architecture implementation
+- Implement offline caching with Room Database
+- Further UI enhancements (animations, dark mode, etc.)
