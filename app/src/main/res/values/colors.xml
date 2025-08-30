@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="weather_bg_gradient_start">#FF1A2980</color>
+    <color name="weather_bg_gradient_end">#FF26D0CE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF666666</color>
+    <color name="weather_card_bg">#801A2980</color>
+</resources>

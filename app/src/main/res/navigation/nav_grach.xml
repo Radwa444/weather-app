@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grach"
+    app:startDestination="@id/locationFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.myweather.ui.loaction.LocationFragment"
+        android:label="fragment_loactoin"
+        tools:layout="@layout/fragment_loactoin" >
+        <action
+            android:id="@+id/action_locationFragment_to_weatherDataFragment"
+            app:destination="@id/weatherDataFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDataFragment"
+        android:name="com.example.myweather.ui.weatherdata.fragment.WeatherDataFragment"
+        android:label="fragment_weather_data"
+        tools:layout="@layout/fragment_weather_data">
+        <argument
+            android:name="lat"
+            app:argType="float"
+            android:defaultValue="0.0"
+            app:nullable="false" />
+
+        <argument
+            android:name="lon"
+            app:argType="float"
+            android:defaultValue="0.0"
+            app:nullable="false" />
+    </fragment>
+
+
+</navigation>

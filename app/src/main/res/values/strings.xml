@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_location_must_be_specified">The location must be specified.</string>
+    <string name="get_current_location">Get Current location</string>
+    <string name="mountain_view">Mountain View</string>
+    <string name="us">US</string>
+</resources>
